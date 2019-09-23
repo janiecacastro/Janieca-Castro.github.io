@@ -3,6 +3,7 @@ let img
 function setup()   {
 
     createCanvas(400, 400);
+    background(255);
 }
  
 function draw() {
@@ -73,9 +74,6 @@ function draw() {
   line(235,110,233, 119); // lash(R-eye)
   line(205,110,209, 119); // lash(R-eye)
    line(210,110,212, 117); // lash(R-eye)
-  
-
-  
-   noStroke();
+ 
 
 }
