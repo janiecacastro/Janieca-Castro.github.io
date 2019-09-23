@@ -74,6 +74,10 @@ function draw() {
   line(235,110,233, 119); // lash(R-eye)
   line(205,110,209, 119); // lash(R-eye)
    line(210,110,212, 117); // lash(R-eye)
- 
+
+     noFill();
+  strokeWeight(2);
+  arc(218,114,40,40,1.2 *PI, 1.8*PI);//R-
+   arc(170,114,40,40,1.2*PI, 1.8*PI);//L-Brow
 
 }
