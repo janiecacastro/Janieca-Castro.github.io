@@ -1,0 +1,15 @@
+//Temperature code 
+int pinTemp = A0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int temp = analogRead(pinTemp);
+  temp = temp * 0.48828125;
+  Serial.print("Temperature: ");
+  Serial.print(temp);
+  Serial.println("F");
+  delay(1000);  
+}
