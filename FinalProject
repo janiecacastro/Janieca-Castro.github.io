@@ -1,8 +1,10 @@
 //Temperature code 
 int pinTemp = A0;
+int ledPin = 13;
 
 void setup() {
   Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
@@ -11,5 +13,11 @@ void loop() {
   Serial.print("Temperature: ");
   Serial.print(temp);
   Serial.println("F");
-  delay(1000);  
-}
+  delay(1000);
+  if (temp >=72) { digitalWrite(ledPin, HIGH);
+  }  else  {digitalWrite(ledPin, LOW);
+  
+  }
+//analogWrite(11, map(temp, 71,80,0,255));
+  }
+
