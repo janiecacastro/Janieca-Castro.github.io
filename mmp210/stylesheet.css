@@ -2,7 +2,7 @@ body{
 	background-color:#FFCE6F ;
 	margin: 50px 100px 8px 100px;
 	color:#663c00;
-	font-family: "acme", sans-serif;
+	font-family: sans-serif;
 }
 
 .nav-container{ 	
@@ -22,7 +22,7 @@ font-size:20px;
 font-family:'acme', sans-serif;
 }  
 
-.nav-container li{
+/*.nav-container li{
 float: left; /*each seperate item tries to float left*/
 }  
 
