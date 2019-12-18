@@ -1,44 +1,43 @@
-let img 
-
-function setup()   {
-
-    createCanvas(400, 400);
-    background(255);
+let img
+function setup() {
+  createCanvas(400, 330);
+  
 }
- 
-function draw() {
 
-    stroke(255);
-  point(width * 0.5, height * 0.5);
-  point(width * 0.5, height * 0.25);
-    fill(224,145,66);
-    fill(0);
-    noStroke(0);
-    rect(150,205,115,120);//(chest)
+function draw() {
+  background(220);
+ 
+ stroke(0);
+  for (var x = 0; x <= mouseX; x += 50) {
+    for (var y = 0; y <= mouseY; y += 50){
+      fill(random(255),0,random(255));
+      ellipse(x ,y,25,25);
+  
+   noStroke();
+  fill(0);
+    rect(150,208,120,120);//(chest)
     // rect(x, y, width, height)
     arc(250, 330, 150, 250, -PI, 0, CHORD);//L-shoulder
     arc(160, 330, 150, 250, -PI, 0, CHORD);//r-shoulder
 
-    
-    
-  
- fill(224,145,66);
- stroke(0);
+    fill(224,145,66);
   strokeWeight (1);
   
-  ellipse(200,150,175,170); //head 
+  ellipse(200,150,150,150); //head 
   fill(255);
   
   ellipse(220,130,30,30);//L eye(R-L,U-D,x1, y1)
   ellipse(170,130,30,30);//R eye 
   fill(233,222,100);
   fill(223,204,200);
+        
+// translate (mouseX /10 , mouseY /10);
    ellipse(220,130,10,10);//L eye(R-L,U-D,x1, y1)
   ellipse(170,130,10,10);//R eye 
   fill (220,204,135);
+    }
 
-
-  
+  {
   fill(190,200,750);
   noStroke();
   
@@ -74,10 +73,22 @@ function draw() {
   line(235,110,233, 119); // lash(R-eye)
   line(205,110,209, 119); // lash(R-eye)
    line(210,110,212, 117); // lash(R-eye)
+  
 
-     noFill();
+  //arc(x, y, w, h, angle start, angle stop, [mode], [detail])
+       
+     //ellipse(200,65,90,40);
+    
+    //arc(150,50,80, 80,HALF_PI, QUARTER_PI);
+  noFill();
   strokeWeight(2);
   arc(218,114,40,40,1.2 *PI, 1.8*PI);//R-
    arc(170,114,40,40,1.2*PI, 1.8*PI);//L-Brow
+  
+    }
+  }
+
+ //rotate(angle, [axis])
 
 }
+
