@@ -7,11 +7,11 @@ function setup() {
 function draw() {
   background(220);
  
-// stroke(0);
- // for (var x = 0; x <= mouseX; x += 50) {
-  //  for (var y = 0; y <= mouseY; y += 50){
-   //   fill(random(255),0,random(255));
-  //    ellipse(x ,y,25,25);
+ stroke(0);
+  for (var x = 0; x <= mouseX; x += 50) {
+    for (var y = 0; y <= mouseY; y += 50){
+      fill(random(255),0,random(255));
+      ellipse(x ,y,25,25);
  
    noStroke();
   fill(0);
@@ -35,10 +35,10 @@ function draw() {
    ellipse(220,130,10,10);//L eye(R-L,U-D,x1, y1)
   ellipse(170,130,10,10);//R eye
   fill (220,204,135);
-    
+    }
 
-  
- fill(190,200,750);
+  {
+  fill(190,200,750);
   noStroke();
  
  
@@ -46,7 +46,7 @@ function draw() {
  
   fill(255);
   arc(198,170,50,50,0,-PI);//mouth
-   fill(0);
+    fill(0);
     arc(198,177,50,35,0,-PI);//R-L,U-D,X1,Y1*black in mouth*
   stroke(0);
   strokeWeight(1);
@@ -85,8 +85,8 @@ function draw() {
   arc(218,114,40,40,1.2 *PI, 1.8*PI);//R-
    arc(170,114,40,40,1.2*PI, 1.8*PI);//L-Brow
  
-   // }
- // }
+    }
+  }
 
  //rotate(angle, [axis])
 
