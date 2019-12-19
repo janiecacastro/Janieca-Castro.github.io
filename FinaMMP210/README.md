@@ -1,4 +1,4 @@
-# janiecacastro.github.io/mmp210/final.html
+# https://janiecacastro.github.io/mmp210/Final.html
 
 For this final project i decided to try to create a temperature sensore for a fishtank or a tank surviving animal, 
 that has special temperature rquirements for its survival. I did research and learned that different types of fish 
