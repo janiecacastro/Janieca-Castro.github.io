@@ -1,0 +1,190 @@
+body{
+	background-color:#FFCE6F ;
+	margin: 0px 100px 0px 100px;
+	color:#663c00;
+	font-family: "acme", sans-serif;
+}
+
+.nav-container{ 	
+width:100%; 
+background-color: #B59100;
+position:fixed; 
+left:0;  
+top:0;   
+} 
+
+.nav-container ul{
+width:100%;
+margin: auto;
+padding:0; /*Ul would have default padding otherwise*/
+list-style-type: none; 
+font-size:20px;  
+font-family:'acme', sans-serif;
+}  
+
+.nav-container li{
+float: left; /*each seperate item tries to float left*/
+}  
+
+.nav-container a{ 
+display: block;  /*let’s us treat each link as a box, which can be sized and styled*/ 
+box-sizing: border-box; /*allows the "width" to include borders and padding*/
+width: 130px; 
+padding: 7px;
+text-decoration: none;  /*removes the default underline*/
+text-align: center; 
+background-color: #cca300; 
+color:#e6db19;
+} 
+
+.nav-container a:hover{ 
+background-color: #ABD599;
+text-decoration: underline;
+/* changes link-box color on rollover*/ 
+}
+
+.nav-container a:active{
+	color: #5fa343;
+	text-decoration: underline;
+}
+.nav-container a:visited{
+	color:#ffdb4d;
+}
+h1{
+	font-family: 'Black Ops One', cursive;
+	font-size: 35px;
+	color:#663c00;
+	background-color: #B59100; 
+	padding: 5px auto;
+	width: 100%;
+	text-align: center; 
+	border: solid 4px #B56A00;
+	clear: both;
+	margin: 5px 0 5px 0;
+}
+
+h2{
+	clear:both;
+	font-family:'Black Ops One', cursive;
+	font-size: 30px;
+	color:#7F4B00;
+	background-color: #B59100;
+	padding: 0 5px 5px 5px;
+	width: 100%;
+	padding: 2px;
+	border: solid 3px #B56A00;
+	text-align: center;
+	margin: 10px 0 15px 0;
+
+	
+}
+h3{
+	width: auto;
+	background-color: #806600;
+	padding: 2px;
+	border: solid 3px #7F4B00;
+	text-align: center;
+	clear: both;
+	margin: 0px 75px 0px 75px;
+	color: #cca300;
+}
+.rt-responsive{ 
+	max-width:100%; 
+	height: auto;
+	float: right;
+	margin:0 0 3px 10px;
+}
+.lft-responsive{ 
+
+	max-width:100%; 
+	height: auto;
+	float: left;
+	margin:0px 15px 0 0px;
+}
+.center-responsive{
+	display:block;
+	max-width: 100%;
+	height: auto;
+	margin: 50px 0 10px 0px;
+}
+p{ text-align: left;
+	line-height: 24px;
+	font-family: 'Acme', sans-serif;
+	margin: 5px 0 5px 0;
+}
+
+
+img{
+	border: solid 4px #B56A00;
+	border-spacing: 5px 0px 0px 0px;
+	clear: both;
+	margin: 5px 0 5px 0; /* you could also use 'margine: 5px 0'*/
+
+}
+iframe{
+	border-color: #B56A00;
+	margin: 5px 5px 5px 5px;
+	height: 550px;
+	width: 450px;
+}
+@media screen and (max-width: 600px) {
+	.nav-container{
+		width: 100%;
+		padding: 5px;
+		left: 0;
+		top:0;
+	}
+	.nav-container a{ 
+		display: block;  /*let’s us treat each link as a box, which can be sized and styled*/ 
+		box-sizing: border-box; /*allows the "width" to include borders and padding*/
+		width: 90px; 
+		padding: 5px;
+		text-decoration: none;  /*removes the default underline*/
+		text-align: center; 
+		background-color: #cca300; 
+		color:#e65c00;
+		height: 32px;
+		font-size: 19px;
+	} 
+	body{
+		margin: 5px 45px 5px 45px; 
+	}
+	h1{
+		font-size: 28px;
+		border:solid 3px #B56A00;
+		margin-bottom: 5px;
+
+	}
+	h2{
+		font-size: 25px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	h3{
+		width: auto;
+		background-color: #806600;
+		padding: 2px;
+		border: solid 2px #663c00;
+		text-align: center;
+		clear: both;
+		color: #cca300;
+		font-size: 17px;
+		margin: 0 75px 0 75px;
+	}
+	img{
+		border: solid 3px #B56A00;
+		margin: 0 0 0 0;
+		clear: both;
+	}
+	.rt-responsive{
+		margin: 1px 0 5px 0; 
+
+	}
+	.center-responsive{
+		display:block;
+		max-width: 100%;
+		height: 100px;
+		margin: 50px 0 5px 0px;
+	}
+
+}
