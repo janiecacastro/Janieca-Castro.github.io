@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+            
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                font-family: helvetica;
+            }
+            
+            h2{
+                font-family: 'Oswald', sans-serif;
+            }
+            
+            .container{
+                display: flex;
+                max-width: 900px;
+                margin:0 auto;
+            }
+            .w33{
+                width: 33.333333%;
+            }
+            .bgred{
+                background: #f00;
+            }
+            .bgcrimson{
+                background: #600;
+            }
+            .p20{
+                padding: 20px;
+            }
+            .ko{
+                color: #fff;
+                text-align: center;
+            }
+            .fa{
+                font-size: 40px;
+                background: #000;
+                padding: 10px;
+                width:60px;
+                height: 60px;
+                border-radius:50%;
+            }
+            .w33:hover{
+                background:#f50;
+            }
+             @keyframes bob{
+                0%{
+                    background: #000;
+                    color:#fff;
+                }
+                50%{
+                    background:#fff;
+                    color:#000;
+                }
+                 100%{
+                    background:#000;
+                    color:#fff;
+                }
+             }
+            .w33:hover .fa{
+                background: #fff;
+                color:#000;
+                animation:bob 3s linear infinite;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="w33 p20 ko bgred">
+                <i class="fa fa-bullseye"></i>
+                <h2> Benefit 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="w33 p20  ko bgcrimson">
+                <i class="fa fa-leaf"></i>
+                <h2> Benefit 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="w33 p20 ko bgred">
+                <i class="fa fa-briefcase"></i>
+                <h2> Benefit 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>      
+    </body>
+</html>

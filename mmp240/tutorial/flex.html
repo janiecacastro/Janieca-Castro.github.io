@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>flex</title>
+        <style>
+            *{
+                margin:0;
+                font-family:helvetica;
+                box-sizing: border-bo
+                    padding:0;
+            }
+           
+            #hero{
+                background:#f00;
+                height: 100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center; 
+            }
+            #hcontent{
+                background:#fff;
+                padding:20px;
+                max-width:300px; 
+                display:flex;
+            }
+            .container{
+                max-width:800px;
+                background:#ddd;
+                margin:0 auto;
+                display:flex;
+            }
+            .dbr{
+                border:1px solid #000;
+                padding:10px;
+            }
+            .w25{
+                width:25%;   
+            }
+            .w50{
+                width:50%;
+            }
+            .w75{
+                width:75%;
+            }     
+        </style>
+    </head>
+    <body>
+        <div id="hero">
+            <div id="hcontent">
+                <h1> my promise</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+        </div>
+            <div class="container">
+                <div class="bdr w50">
+                    <h1>1</h1>
+                </div>    
+            </div>       
+        <div class="container">
+            <div class="dbr w25">
+                <h1>2</h1>
+            </div>    
+            <div class="dbr w25">
+                <h1>3</h1>
+            </div>
+            <div class="dbr w25">
+                <h1>4</h1>
+             </div>
+            <div class="dbr w25">
+                <h1>5</h1>
+             </div>
+        </div>
+        <div class="container">
+              <div class="dbr w75">
+                <h2>6</h2>           
+              </div>
+            <div class="dbr w25">
+                <h2>7</h2>                
+            </div>
+        </div>
+         <div class="container">   
+            <div class="dbr w50">
+                <h3>8</h3>
+            </div>
+            <div class="dbr w50">
+            <h3>9</h3>
+                </div>
+        </div>
+    </body>
+</html>
