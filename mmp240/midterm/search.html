@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Search</title>
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="homecover">
+            <div class="cover">
+                <img src="img/detailpage.png">
+            </div>
+        </div>
+        <!-- top nav -->
+        <div id="header">
+            <img src="img/logo.png">
+            <div class="topnav">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+             <a href="#" class="logo"><img src="img/avilogo.png"></a>
+        </div>
+        <div id="Main2">
+            <div class="top">
+        <h1>Forest Hills One Large Bedroom for rent $1850(Forest Hills) </h1> 
+            </div>
+            <div class="pick">
+                <!-- Insert Image -->
+            </div>
+            <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12099.762062514856!2d-73.92421365!3d40.697307699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587087068358!5m2!1sen!2sus" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            
+            <div class="w3content" style="max-width:650px">
+  <img class="mySlides" src="img/room1.png" style="width:100%">
+  <img class="mySlides" src="img/room2.png" style="width:100%">
+  <img class="mySlides" src="img/room3.png" style="width:100%">
+  <img class="mySlides" src="img/room%204.png" style="width:100%">
+</div>
+<div class="w3center">
+  <div class="w3section">
+    <button class="w3button" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3button" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3button2" onclick="currentDiv(1)">1</button> 
+  <button class="w3button2" onclick="currentDiv(2)">2</button> 
+  <button class="w3button2" onclick="currentDiv(3)">3</button> 
+    <button class="w3button2" onclick="currentDiv(4)">4</button> 
+        </div>
+            <div class="button3">
+                <a href="#">1Br/1Ba </a>
+                <a href="#">820SQ Ft</a>
+                <a href="#"class="big">Available now </a>
+                <a href="#"class="big">Laundry room</a>
+                <a href="#"class="big">wheelchair access</a>
+            </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-red", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-red";
+        }
+        </script>
+        <div class="about">
+            <p>Forest Hills One Large Bedroom(820 SQFT) for Rent of $1850 </p>
+            <p>Very large bedroom and huge living room about 380 sqfts. Sunshine bright clean, safe , quiet area in the center of Forest Hills. Renovated recently, looks shinning and bright. Two big closets.
+                </p>
+            <div class="list">
+                <ul>
+                <li>Wood Floors</li>
+                <li>Good closet Space</li>
+                <li>Laundry room</li>
+                <li> 5 minutes to M+R trains</li>
+                <li> No Pets</li>
+                <li> No Broker Fee</li>
+                </ul>
+            </div> 
+            </div>
+        </div>
+    </body>
+</html>
